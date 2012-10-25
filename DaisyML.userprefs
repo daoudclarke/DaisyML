@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assembly Browser" ctype="Workbench">
+    <Files>
+      <File FileName="DaisyML/IClassifier.cs" Line="1" Column="1" />
+      <File FileName="DaisyML.Tests/InstanceTest.cs" Line="27" Column="12" />
+      <File FileName="DaisyML/Feature.cs" Line="4" Column="2" />
+      <File FileName="Assembly Browser" />
+      <File FileName="DaisyML.Tests/Main.cs" Line="2" Column="25" />
+      <File FileName="DaisyML/Instance.cs" Line="2" Column="31" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
+</Properties>

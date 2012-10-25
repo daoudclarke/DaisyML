@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="/home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/bin/Debug/DaisyML.Classifiers.Tests.exe" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-10-23" time="17:25:45">
+  <environment nunit-version="2.6.1.12217" clr-version="2.0.50727.1433" os-version="Unix 2.6.35.32" platform="Unix" cwd="/home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/bin/Debug" machine-name="ubuntu" user="daoud" user-domain="ubuntu" />
+  <culture-info current-culture="en-GB" current-uiculture="en-GB" />
+  <test-suite type="Assembly" name="/home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/bin/Debug/DaisyML.Classifiers.Tests.exe" executed="True" result="Failure" success="False" time="0.224" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="DaisyML" executed="True" result="Failure" success="False" time="0.160" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Classifiers" executed="True" result="Failure" success="False" time="0.159" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Tests" executed="True" result="Failure" success="False" time="0.158" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="ClassifierTest" executed="True" result="Failure" success="False" time="0.152" asserts="0">
+                    <results>
+                      <test-case name="DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers" executed="True" result="Failure" success="False" time="0.119" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected: greater than 0
+  But was:  0
+]]></message>
+                          <stack-trace><![CDATA[at DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers () [0x0008a] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:33
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

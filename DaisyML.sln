@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaisyML", "DaisyML\DaisyML.csproj", "{A78423E8-BA76-490D-8AA6-A1BB67E64670}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaisyML.Tests", "DaisyML.Tests\DaisyML.Tests.csproj", "{9EB4483C-EDC8-4B21-9541-21F32AF1B4BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaisyML.Classifiers", "DaisyML.Classifiers\DaisyML.Classifiers.csproj", "{33AF7B4C-1F43-4589-8521-2CD2CF9D9A81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaisyML.Classifiers.Tests", "DaisyML.Classifiers.Tests\DaisyML.Classifiers.Tests.csproj", "{1B6B9634-0291-47B6-A32C-4134DE55B6CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaisyML.Utils", "DaisyML.Utils\DaisyML.Utils.csproj", "{9046F113-BE12-4083-A178-E9EEF1D1ACD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B6B9634-0291-47B6-A32C-4134DE55B6CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B6B9634-0291-47B6-A32C-4134DE55B6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B6B9634-0291-47B6-A32C-4134DE55B6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B6B9634-0291-47B6-A32C-4134DE55B6CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33AF7B4C-1F43-4589-8521-2CD2CF9D9A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33AF7B4C-1F43-4589-8521-2CD2CF9D9A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33AF7B4C-1F43-4589-8521-2CD2CF9D9A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33AF7B4C-1F43-4589-8521-2CD2CF9D9A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9046F113-BE12-4083-A178-E9EEF1D1ACD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9046F113-BE12-4083-A178-E9EEF1D1ACD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9046F113-BE12-4083-A178-E9EEF1D1ACD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9046F113-BE12-4083-A178-E9EEF1D1ACD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EB4483C-EDC8-4B21-9541-21F32AF1B4BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EB4483C-EDC8-4B21-9541-21F32AF1B4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EB4483C-EDC8-4B21-9541-21F32AF1B4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EB4483C-EDC8-4B21-9541-21F32AF1B4BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A78423E8-BA76-490D-8AA6-A1BB67E64670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78423E8-BA76-490D-8AA6-A1BB67E64670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78423E8-BA76-490D-8AA6-A1BB67E64670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78423E8-BA76-490D-8AA6-A1BB67E64670}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = DaisyML.Classifiers.Tests\DaisyML.Classifiers.Tests.csproj
+	EndGlobalSection
+EndGlobal
