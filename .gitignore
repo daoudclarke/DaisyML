@@ -1,5 +1,13 @@
 # Bismillahi-r-Rahmani-r-Rahim
 #
-# Ignore generated dll files
+# Ignore generated dll and exe files
 *.dll
 *.dll.mdb
+*.exe
+*.exe.mdb
+
+# Ignore emacs temp files
+*~
+
+# Except anything in the lib folder
+!/lib/*
