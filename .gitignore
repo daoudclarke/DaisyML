@@ -1,0 +1,5 @@
+# Bismillahi-r-Rahmani-r-Rahim
+#
+# Ignore generated dll files
+*.dll
+*.dll.mdb

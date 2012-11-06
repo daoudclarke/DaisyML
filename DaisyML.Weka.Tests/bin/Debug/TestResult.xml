@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="/home/daoud/git/DaisyML/DaisyML.Weka.Tests/bin/Debug/DaisyML.Weka.Tests.exe" total="2" errors="0" failures="2" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-11-06" time="09:52:15">
+  <environment nunit-version="2.6.1.12217" clr-version="2.0.50727.1433" os-version="Unix 2.6.35.32" platform="Unix" cwd="/home/daoud/git/DaisyML/DaisyML.Weka.Tests/bin/Debug" machine-name="ubuntu" user="daoud" user-domain="ubuntu" />
+  <culture-info current-culture="en-GB" current-uiculture="en-GB" />
+  <test-suite type="Assembly" name="/home/daoud/git/DaisyML/DaisyML.Weka.Tests/bin/Debug/DaisyML.Weka.Tests.exe" executed="True" result="Failure" success="False" time="3.362" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="DaisyML" executed="True" result="Failure" success="False" time="3.296" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Weka" executed="True" result="Failure" success="False" time="3.295" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Tests" executed="True" result="Failure" success="False" time="3.294" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="WekaInstanceUtilsTest" executed="True" result="Failure" success="False" time="3.289" asserts="0">
+                    <results>
+                      <test-case name="DaisyML.Weka.Tests.WekaInstanceUtilsTest.TestConvertFromAndToWeka" executed="True" result="Failure" success="False" time="2.739" asserts="2">
+                        <failure>
+                          <message><![CDATA[  Conversion does not give the same ARFF.
+  Expected string length 4614 but was 1669. Strings differ at index 155.
+  Expected: "...idth numeric\n@attribute class {Iris-setosa,Iris-versicolor..."
+  But was:  "...idth numeric\n@attribute class numeric\n\n@data\n0,0,0,0,0\n0,0..."
+  ---------------------------------------------^
+]]></message>
+                          <stack-trace><![CDATA[at DaisyML.Weka.Tests.WekaInstanceUtilsTest.TestConvertFromAndToWeka () [0x0004f] in /home/daoud/git/DaisyML/DaisyML.Weka.Tests/WekaInstanceUtilsTest.cs:60
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="DaisyML.Weka.Tests.WekaInstanceUtilsTest.TestConvertToWeka" executed="True" result="Failure" success="False" time="0.086" asserts="3">
+                        <failure>
+                          <message><![CDATA[  Conversion to Weka format incorrect.
+  Expected string length 106 but was 87. Strings differ at index 10.
+  Expected: "@relation DaisyML.Weka.Tests.TestInstance\n\n@attribute feature..."
+  But was:  "@relation TestInstance\n\n@attribute feature numeric\n@attribute..."
+  ---------------------^
+]]></message>
+                          <stack-trace><![CDATA[at DaisyML.Weka.Tests.WekaInstanceUtilsTest.TestConvertToWeka () [0x00067] in /home/daoud/git/DaisyML/DaisyML.Weka.Tests/WekaInstanceUtilsTest.cs:45
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

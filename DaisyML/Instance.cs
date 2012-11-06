@@ -15,29 +15,57 @@ namespace DaisyML
 	/// </summary>
 	public class Instance : IInstance
 	{
-		#region IEnumerable implementation
-		System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator ()
-		{
-			throw new NotImplementedException ();
+		#region IInstance implementation
+		public IEnumerable<KeyValuePair<string, object>> Features {
+			get {
+				return GetValues(typeof(Feature));
+			}
 		}
-		#endregion
+		
+		
+		public IEnumerable<KeyValuePair<string, object>> Targets {
+			get {
+				return GetValues(typeof(Target));
+			}
+		}
 
-		#region IEnumerable[System.Collections.Generic.KeyValuePair[System.String,System.Object]] implementation
-		public IEnumerator<KeyValuePair<string, object>> GetEnumerator()
+		public void SetTarget(string targetName, object targetValue) {
+			var type = this.GetType();
+			var fields = type.GetFields();
+			foreach (var field in fields) {
+				if (field.Name == targetName) {
+					var attributes = field.GetCustomAttributes(true);
+					if (attributes.Select(x => x.GetType() == typeof(Target)).Count() > 0) {
+						if (targetValue.GetType() != field.FieldType) {
+							throw new InvalidOperationException(
+							  "Attempt to set target with the wrong type.");
+						}
+						field.SetValue(this, targetValue);
+					}
+				}
+			}			
+		}
+		
+		public string TypeIdentifier { get {
+				return this.GetType().Name;
+			}
+		}
+		
+		#endregion
+		private IEnumerable<KeyValuePair<string, object>> GetValues
+			(Type attribute)
 		{
-			IDictionary<string, object> values =
-				new SortedDictionary<string, object>();
+			var values = new SortedDictionary<string, object>();
 			var type = this.GetType();
 			var fields = type.GetFields();
 			foreach (var field in fields) {
 				var attributes = field.GetCustomAttributes(true);
-				if (attributes.Select(x => x.GetType() == typeof(Feature)).Count() > 0) {
+				if (attributes.Where(x => x.GetType() == attribute).Count() > 0) {
 					values[field.Name] = field.GetValue(this);
 				}
 			}
-			return values.GetEnumerator();
+			return values;
 		}
-		#endregion
 	}
 }
 

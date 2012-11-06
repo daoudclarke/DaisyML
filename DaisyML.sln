@@ -11,12 +11,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaisyML.Classifiers.Tests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaisyML.Utils", "DaisyML.Utils\DaisyML.Utils.csproj", "{9046F113-BE12-4083-A178-E9EEF1D1ACD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaisyML.Weka", "DaisyML.Weka\DaisyML.Weka.csproj", "{B500FD7E-23EB-4BF8-9659-B9CEEE60A711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaisyML.Weka.Tests", "DaisyML.Weka.Tests\DaisyML.Weka.Tests.csproj", "{19DD1290-9566-48AF-8A20-5D7CBA4F8987}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaisyML.TestData", "DaisyML.TestData\DaisyML.TestData.csproj", "{934A6801-D8F5-4545-A290-C855B39FF362}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19DD1290-9566-48AF-8A20-5D7CBA4F8987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19DD1290-9566-48AF-8A20-5D7CBA4F8987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19DD1290-9566-48AF-8A20-5D7CBA4F8987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19DD1290-9566-48AF-8A20-5D7CBA4F8987}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1B6B9634-0291-47B6-A32C-4134DE55B6CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1B6B9634-0291-47B6-A32C-4134DE55B6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B6B9634-0291-47B6-A32C-4134DE55B6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,6 +39,10 @@ Global
 		{9046F113-BE12-4083-A178-E9EEF1D1ACD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9046F113-BE12-4083-A178-E9EEF1D1ACD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9046F113-BE12-4083-A178-E9EEF1D1ACD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{934A6801-D8F5-4545-A290-C855B39FF362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934A6801-D8F5-4545-A290-C855B39FF362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934A6801-D8F5-4545-A290-C855B39FF362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934A6801-D8F5-4545-A290-C855B39FF362}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9EB4483C-EDC8-4B21-9541-21F32AF1B4BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9EB4483C-EDC8-4B21-9541-21F32AF1B4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EB4483C-EDC8-4B21-9541-21F32AF1B4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,8 +51,12 @@ Global
 		{A78423E8-BA76-490D-8AA6-A1BB67E64670}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A78423E8-BA76-490D-8AA6-A1BB67E64670}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A78423E8-BA76-490D-8AA6-A1BB67E64670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B500FD7E-23EB-4BF8-9659-B9CEEE60A711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B500FD7E-23EB-4BF8-9659-B9CEEE60A711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B500FD7E-23EB-4BF8-9659-B9CEEE60A711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B500FD7E-23EB-4BF8-9659-B9CEEE60A711}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = DaisyML.Classifiers.Tests\DaisyML.Classifiers.Tests.csproj
+		StartupItem = DaisyML.Weka.Tests\DaisyML.Weka.Tests.csproj
 	EndGlobalSection
 EndGlobal

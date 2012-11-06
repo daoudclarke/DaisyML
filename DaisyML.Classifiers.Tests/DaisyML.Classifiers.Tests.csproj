@@ -46,10 +46,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\bin\nunit\lib\nunit-console-runner.dll</HintPath>
     </Reference>
-    <Reference Include="weka, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\weka.dll</HintPath>
-    </Reference>
     <Reference Include="IKVM.OpenJDK.Core, Version=0.40.0.1, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
       <Package>ikvm</Package>
     </Reference>
@@ -65,11 +61,15 @@
     <Reference Include="IKVM.OpenJDK.Charsets, Version=0.40.0.1, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
       <Package>ikvm</Package>
     </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="ClassifierTest.cs" />
+    <Compile Include="IrisInstance.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DaisyML.Classifiers\DaisyML.Classifiers.csproj">
@@ -80,6 +80,14 @@
       <Project>{A78423E8-BA76-490D-8AA6-A1BB67E64670}</Project>
       <Name>DaisyML</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DaisyML.Utils\DaisyML.Utils.csproj">
+      <Project>{9046F113-BE12-4083-A178-E9EEF1D1ACD0}</Project>
+      <Name>DaisyML.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DaisyML.TestData\DaisyML.TestData.csproj">
+      <Project>{934A6801-D8F5-4545-A290-C855B39FF362}</Project>
+      <Name>DaisyML.TestData</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -87,10 +95,4 @@
       <Properties InternalTargetFrameworkVersion="3.5" />
     </MonoDevelop>
   </ProjectExtensions>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\iris.arff" />
-  </ItemGroup>
 </Project>

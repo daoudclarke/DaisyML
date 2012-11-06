@@ -47,6 +47,7 @@
     <Compile Include="Feature.cs" />
     <Compile Include="IModel.cs" />
     <Compile Include="IInstance.cs" />
+    <Compile Include="Target.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

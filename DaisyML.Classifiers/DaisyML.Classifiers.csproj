@@ -30,6 +30,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="weka, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\weka.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="SVM, Version=1.6.3.0, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SVM.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
@@ -46,6 +58,14 @@
     <ProjectReference Include="..\DaisyML\DaisyML.csproj">
       <Project>{A78423E8-BA76-490D-8AA6-A1BB67E64670}</Project>
       <Name>DaisyML</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DaisyML.Utils\DaisyML.Utils.csproj">
+      <Project>{9046F113-BE12-4083-A178-E9EEF1D1ACD0}</Project>
+      <Name>DaisyML.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DaisyML.Weka\DaisyML.Weka.csproj">
+      <Project>{B500FD7E-23EB-4BF8-9659-B9CEEE60A711}</Project>
+      <Name>DaisyML.Weka</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

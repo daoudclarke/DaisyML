@@ -29,7 +29,7 @@ namespace DaisyML.Tests
 				Name = "test",
 				Length = 2.3
 			};
-			var values = instance.OrderBy(x => x.Key).ToArray();
+			var values = instance.Features.OrderBy(x => x.Key).ToArray();
 
 			Assert.AreEqual(3, values.Length);
 			Assert.AreEqual("Length", values[0].Key);

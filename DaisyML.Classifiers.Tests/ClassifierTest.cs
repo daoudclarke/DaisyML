@@ -6,6 +6,8 @@ using System.Linq;
 using NUnit.Framework;
 using DaisyML;
 using DaisyML.Classifiers;
+using DaisyML.Utils;
+using DaisyML.TestData;
 
 namespace DaisyML.Classifiers.Tests
 {
@@ -14,35 +16,33 @@ namespace DaisyML.Classifiers.Tests
 	{
 		[Test]
 		public void TestClassifiers() {
-			var classifiers = new List<IClassifier>();
+			var classifier = new NaiveBayesClassifier();
+			var data = Data.GetTestInstances().First();
+			var trainingSetSize = data.Count() / 2;
+			var trainingData = data.Take(trainingSetSize);
+			var testData = data.Skip(trainingSetSize).ToArray();
 
-			classifiers.Add(new NaiveBayesClassifier());
+			var model = classifier.Train(trainingData);
 
+			Assert.IsTrue(testData.Select(x => x.Targets.First().Value)
+			              .Distinct().Count() == 1,
+			              "Should only be one classification value.");
 			
+			model.Classify(testData);
 			
-//			// Get all classifier implementations
-//			var ignore = new Classifiers.MyClass();
-//			var assembly = Assembly.GetAssembly(ignore.GetType());
-//			var types = assembly.GetExportedTypes();
-//			foreach (var type in types) {
-//				if (type.GetInterface("IClassifer") != null) {
-//					Console.WriteLine(type.ToString());
-//					var constructor = type.GetConstructor(new Type[] {}); 
-//					var classifier =
-//						(IClassifier)constructor.Invoke(new object[] {});
-//					classifiers.Add(classifier);
-//				}
-//			}
-//			
-//			Assert.Greater(0, classifiers.Count);
-		}
-
-		private IEnumerable<Instance> GetTestData() {
-			var stream = System.Reflection.Assembly.GetEntryAssembly()
-				.GetManifestResourceStream(
-				  "DaisyML.Classifiers.Tests.Resources.iris.arff");
+			var allowedClasses = new HashSet<string>(
+			   trainingData.Select(x => (string)x.Targets.First().Value));
+			Assert.IsTrue(allowedClasses.Count > 0,
+			              "No class values found");
 			
-			return null;
+			Assert.IsTrue(testData.Select(x => x.Targets.First().Value).Distinct().Count() > 1,
+			              "Should be more than one classification value.");
+			for (int i=0; i<testData.Length; ++i) {
+				Assert.IsTrue(testData[i].Targets.First().Value == null,
+				              "Result class should not be null.");
+				Assert.IsTrue(allowedClasses.Contains((string)testData[i].Targets.First().Value),
+				              "Result should be in allowed class.");
+			}
 		}
 	}
 }
