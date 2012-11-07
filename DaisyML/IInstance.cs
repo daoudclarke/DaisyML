@@ -10,6 +10,7 @@ namespace DaisyML
 	{
 		IEnumerable<KeyValuePair<string, Object> > Features { get; }
 		IEnumerable<KeyValuePair<string, Object> > Targets { get; }
+		object GetValue(string attributeName);
 		void SetTarget(string targetName, object targetValue);
 
 		/// <summary>

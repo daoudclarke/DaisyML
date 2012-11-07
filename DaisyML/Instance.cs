@@ -47,8 +47,13 @@ namespace DaisyML
 		}
 		
 		public string TypeIdentifier { get {
-				return this.GetType().Name;
+				return this.GetType().FullName;
 			}
+		}
+		
+		public object GetValue(string attributeName) {
+			var type = this.GetType();
+			return type.GetField(attributeName).GetValue(this);
 		}
 		
 		#endregion

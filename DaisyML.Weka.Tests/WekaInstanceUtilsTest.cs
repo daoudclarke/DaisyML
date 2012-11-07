@@ -39,7 +39,7 @@ namespace DaisyML.Weka.Tests
 @attribute target numeric
 
 @data
-0,0";
+1,2";
 			var data = converted.ToString();
 			Console.WriteLine(data);
 			Assert.AreEqual(expected, data, "Conversion to Weka format incorrect."); 
@@ -52,9 +52,15 @@ namespace DaisyML.Weka.Tests
 			foreach (var instances in data) {
 				Assert.Less(instances.First().Targets.Count(), 2);
 				var wekaInstances = (WekaInstances)instances;
+				var featureValues = new HashSet<double>();
+				foreach (var instance in wekaInstances) {
+					featureValues.UnionWith(instance.Features.Select(x=>(double)x.Value));
+				}
+				Assert.Greater(featureValues.Count, 1, 
+				   "Should be more than one feature value");
 				var originalArff = wekaInstances.GetArff();
 				var converted = WekaInstanceUtils.ConvertToWeka(wekaInstances);
-
+				
 				var convertedArff = converted.toString();
 				
 				Assert.AreEqual(originalArff, convertedArff,

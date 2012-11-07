@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="/home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/bin/Debug/DaisyML.Classifiers.Tests.exe" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-10-31" time="17:04:45">
+<test-results name="/home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/bin/Debug/DaisyML.Classifiers.Tests.exe" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-11-07" time="17:07:50">
   <environment nunit-version="2.6.1.12217" clr-version="2.0.50727.1433" os-version="Unix 2.6.35.32" platform="Unix" cwd="/home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/bin/Debug" machine-name="ubuntu" user="daoud" user-domain="ubuntu" />
   <culture-info current-culture="en-GB" current-uiculture="en-GB" />
-  <test-suite type="Assembly" name="/home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/bin/Debug/DaisyML.Classifiers.Tests.exe" executed="True" result="Failure" success="False" time="3.030" asserts="0">
+  <test-suite type="Assembly" name="/home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/bin/Debug/DaisyML.Classifiers.Tests.exe" executed="True" result="Success" success="True" time="2.668" asserts="0">
     <results>
-      <test-suite type="Namespace" name="DaisyML" executed="True" result="Failure" success="False" time="2.950" asserts="0">
+      <test-suite type="Namespace" name="DaisyML" executed="True" result="Success" success="True" time="2.596" asserts="0">
         <results>
-          <test-suite type="Namespace" name="Classifiers" executed="True" result="Failure" success="False" time="2.949" asserts="0">
+          <test-suite type="Namespace" name="Classifiers" executed="True" result="Success" success="True" time="2.595" asserts="0">
             <results>
-              <test-suite type="Namespace" name="Tests" executed="True" result="Failure" success="False" time="2.947" asserts="0">
+              <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="2.594" asserts="0">
                 <results>
-                  <test-suite type="TestFixture" name="ClassifierTest" executed="True" result="Failure" success="False" time="2.943" asserts="0">
+                  <test-suite type="TestFixture" name="ClassifierTest" executed="True" result="Success" success="True" time="2.590" asserts="0">
                     <results>
-                      <test-case name="DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers" executed="True" result="Error" success="False" time="2.902" asserts="0">
-                        <failure>
-                          <message><![CDATA[weka.core.UnsupportedAttributeTypeException : weka.classifiers.bayes.NaiveBayes: Cannot handle numeric class!]]></message>
-                          <stack-trace><![CDATA[at weka.core.Capabilities.testWithFail (weka.core.Instances data) [0x00000] in <filename unknown>:0
-at weka.classifiers.bayes.NaiveBayes.buildClassifier (weka.core.Instances instances) [0x00000] in <filename unknown>:0
-at DaisyML.Classifiers.NaiveBayesClassifier.Train[IInstance] (IEnumerable`1 trainingData) [0x0000d] in /home/daoud/git/DaisyML/DaisyML.Classifiers/NaiveBayesClassifier.cs:22
-at DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers () [0x00030] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:25
-]]></stack-trace>
-                        </failure>
-                      </test-case>
+                      <test-case name="DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers" executed="True" result="Success" success="True" time="2.553" asserts="153" />
                     </results>
                   </test-suite>
                 </results>
