@@ -25,7 +25,9 @@ namespace DaisyML.Weka
 			} else if (type == typeof(int)) {
 				_instance.setClassValue((int)targetValue);				
 			} else if (type == typeof(double)) {
-				_instance.setClassValue((double)targetValue);				
+				_instance.setClassValue((double)targetValue);
+			} else if (type.IsEnum) {
+				_instance.setClassValue(targetValue.ToString());	
 			} else {
 				throw new InvalidOperationException(String.Format(
 				  "Cannot set target of type {0}.", type));

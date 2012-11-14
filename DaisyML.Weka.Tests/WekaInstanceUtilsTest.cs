@@ -57,21 +57,18 @@ namespace DaisyML.Weka.Tests
 		[Test]
 		public void TestConvertFromAndToWeka()
 		{
+			// Arrange
 			var data = TestData.Data.GetTestInstances();
 			foreach (var instances in data) {
 				Assert.Less(instances.First().Targets.Count(), 2);
 				var wekaInstances = (WekaInstances)instances;
-				var featureValues = new HashSet<double>();
-				foreach (var instance in wekaInstances) {
-					featureValues.UnionWith(instance.Features.Select(x=>(double)x.Value));
-				}
-				Assert.Greater(featureValues.Count, 1, 
-				   "Should be more than one feature value");
 				var originalArff = wekaInstances.GetArff();
 				var converted = WekaInstanceUtils.ConvertToWeka(wekaInstances);
 				
+				// Act
 				var convertedArff = converted.toString();
 				
+				// Assert
 				Assert.AreEqual(originalArff, convertedArff,
 				                "Conversion does not give the same ARFF.");
 			}

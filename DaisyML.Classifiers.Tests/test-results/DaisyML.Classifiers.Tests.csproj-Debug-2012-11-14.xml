@@ -125,6 +125,75 @@
       <Time />
       <Message>Child test failed</Message>
     </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T16:58:23</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>2</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Child test failed</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T17:07:46</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>2</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Child test failed</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T17:09:57</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>2</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Child test failed</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T17:12:17</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>2</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Child test failed</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T17:13:28</TestDate>
+      <Status>Success</Status>
+      <TotalFailures>0</TotalFailures>
+      <TotalSuccess>2</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Test successful
+
+Execution time: 1.15ms</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T17:16:47</TestDate>
+      <Status>Success</Status>
+      <TotalFailures>0</TotalFailures>
+      <TotalSuccess>2</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Test successful
+
+Execution time: 1.13ms</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T17:22:47</TestDate>
+      <Status>Success</Status>
+      <TotalFailures>0</TotalFailures>
+      <TotalSuccess>2</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Test successful
+
+Execution time: 1.16ms</Message>
+    </UnitTestResult>
   </Results>
   <Tests>
     <TestRecord Name="DaisyML">
@@ -182,6 +251,75 @@
           <TotalIgnored>0</TotalIgnored>
           <Time />
           <Message>Child test failed</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-11-14T16:58:23</TestDate>
+          <Status>Failure</Status>
+          <TotalFailures>2</TotalFailures>
+          <TotalSuccess>0</TotalSuccess>
+          <TotalIgnored>0</TotalIgnored>
+          <Time />
+          <Message>Child test failed</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-11-14T17:07:46</TestDate>
+          <Status>Failure</Status>
+          <TotalFailures>2</TotalFailures>
+          <TotalSuccess>0</TotalSuccess>
+          <TotalIgnored>0</TotalIgnored>
+          <Time />
+          <Message>Child test failed</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-11-14T17:09:57</TestDate>
+          <Status>Failure</Status>
+          <TotalFailures>2</TotalFailures>
+          <TotalSuccess>0</TotalSuccess>
+          <TotalIgnored>0</TotalIgnored>
+          <Time />
+          <Message>Child test failed</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-11-14T17:12:17</TestDate>
+          <Status>Failure</Status>
+          <TotalFailures>2</TotalFailures>
+          <TotalSuccess>0</TotalSuccess>
+          <TotalIgnored>0</TotalIgnored>
+          <Time />
+          <Message>Child test failed</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-11-14T17:13:28</TestDate>
+          <Status>Success</Status>
+          <TotalFailures>0</TotalFailures>
+          <TotalSuccess>2</TotalSuccess>
+          <TotalIgnored>0</TotalIgnored>
+          <Time />
+          <Message>Test successful
+
+Execution time: 1.13ms</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-11-14T17:16:47</TestDate>
+          <Status>Success</Status>
+          <TotalFailures>0</TotalFailures>
+          <TotalSuccess>2</TotalSuccess>
+          <TotalIgnored>0</TotalIgnored>
+          <Time />
+          <Message>Test successful
+
+Execution time: 1.12ms</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-11-14T17:22:47</TestDate>
+          <Status>Success</Status>
+          <TotalFailures>0</TotalFailures>
+          <TotalSuccess>2</TotalSuccess>
+          <TotalIgnored>0</TotalIgnored>
+          <Time />
+          <Message>Test successful
+
+Execution time: 1.15ms</Message>
         </UnitTestResult>
       </Results>
       <Tests>
@@ -241,6 +379,75 @@
               <Time />
               <Message>Child test failed</Message>
             </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-11-14T16:58:23</TestDate>
+              <Status>Failure</Status>
+              <TotalFailures>2</TotalFailures>
+              <TotalSuccess>0</TotalSuccess>
+              <TotalIgnored>0</TotalIgnored>
+              <Time />
+              <Message>Child test failed</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-11-14T17:07:46</TestDate>
+              <Status>Failure</Status>
+              <TotalFailures>2</TotalFailures>
+              <TotalSuccess>0</TotalSuccess>
+              <TotalIgnored>0</TotalIgnored>
+              <Time />
+              <Message>Child test failed</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-11-14T17:09:57</TestDate>
+              <Status>Failure</Status>
+              <TotalFailures>2</TotalFailures>
+              <TotalSuccess>0</TotalSuccess>
+              <TotalIgnored>0</TotalIgnored>
+              <Time />
+              <Message>Child test failed</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-11-14T17:12:17</TestDate>
+              <Status>Failure</Status>
+              <TotalFailures>2</TotalFailures>
+              <TotalSuccess>0</TotalSuccess>
+              <TotalIgnored>0</TotalIgnored>
+              <Time />
+              <Message>Child test failed</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-11-14T17:13:28</TestDate>
+              <Status>Success</Status>
+              <TotalFailures>0</TotalFailures>
+              <TotalSuccess>2</TotalSuccess>
+              <TotalIgnored>0</TotalIgnored>
+              <Time />
+              <Message>Test successful
+
+Execution time: 1.12ms</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-11-14T17:16:47</TestDate>
+              <Status>Success</Status>
+              <TotalFailures>0</TotalFailures>
+              <TotalSuccess>2</TotalSuccess>
+              <TotalIgnored>0</TotalIgnored>
+              <Time />
+              <Message>Test successful
+
+Execution time: 1.11ms</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-11-14T17:22:47</TestDate>
+              <Status>Success</Status>
+              <TotalFailures>0</TotalFailures>
+              <TotalSuccess>2</TotalSuccess>
+              <TotalIgnored>0</TotalIgnored>
+              <Time />
+              <Message>Test successful
+
+Execution time: 1.14ms</Message>
+            </UnitTestResult>
           </Results>
           <Tests>
             <TestRecord Name="Tests">
@@ -299,6 +506,75 @@
                   <Time />
                   <Message>Child test failed</Message>
                 </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-11-14T16:58:23</TestDate>
+                  <Status>Failure</Status>
+                  <TotalFailures>2</TotalFailures>
+                  <TotalSuccess>0</TotalSuccess>
+                  <TotalIgnored>0</TotalIgnored>
+                  <Time />
+                  <Message>Child test failed</Message>
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-11-14T17:07:46</TestDate>
+                  <Status>Failure</Status>
+                  <TotalFailures>2</TotalFailures>
+                  <TotalSuccess>0</TotalSuccess>
+                  <TotalIgnored>0</TotalIgnored>
+                  <Time />
+                  <Message>Child test failed</Message>
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-11-14T17:09:57</TestDate>
+                  <Status>Failure</Status>
+                  <TotalFailures>2</TotalFailures>
+                  <TotalSuccess>0</TotalSuccess>
+                  <TotalIgnored>0</TotalIgnored>
+                  <Time />
+                  <Message>Child test failed</Message>
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-11-14T17:12:17</TestDate>
+                  <Status>Failure</Status>
+                  <TotalFailures>2</TotalFailures>
+                  <TotalSuccess>0</TotalSuccess>
+                  <TotalIgnored>0</TotalIgnored>
+                  <Time />
+                  <Message>Child test failed</Message>
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-11-14T17:13:28</TestDate>
+                  <Status>Success</Status>
+                  <TotalFailures>0</TotalFailures>
+                  <TotalSuccess>2</TotalSuccess>
+                  <TotalIgnored>0</TotalIgnored>
+                  <Time />
+                  <Message>Test successful
+
+Execution time: 1.12ms</Message>
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-11-14T17:16:47</TestDate>
+                  <Status>Success</Status>
+                  <TotalFailures>0</TotalFailures>
+                  <TotalSuccess>2</TotalSuccess>
+                  <TotalIgnored>0</TotalIgnored>
+                  <Time />
+                  <Message>Test successful
+
+Execution time: 1.11ms</Message>
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-11-14T17:22:47</TestDate>
+                  <Status>Success</Status>
+                  <TotalFailures>0</TotalFailures>
+                  <TotalSuccess>2</TotalSuccess>
+                  <TotalIgnored>0</TotalIgnored>
+                  <Time />
+                  <Message>Test successful
+
+Execution time: 1.13ms</Message>
+                </UnitTestResult>
               </Results>
               <Tests>
                 <TestRecord Name="ClassifierTest">
@@ -356,6 +632,75 @@
                       <TotalIgnored>0</TotalIgnored>
                       <Time />
                       <Message>Child test failed</Message>
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2012-11-14T16:58:23</TestDate>
+                      <Status>Failure</Status>
+                      <TotalFailures>2</TotalFailures>
+                      <TotalSuccess>0</TotalSuccess>
+                      <TotalIgnored>0</TotalIgnored>
+                      <Time />
+                      <Message>Child test failed</Message>
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2012-11-14T17:07:46</TestDate>
+                      <Status>Failure</Status>
+                      <TotalFailures>2</TotalFailures>
+                      <TotalSuccess>0</TotalSuccess>
+                      <TotalIgnored>0</TotalIgnored>
+                      <Time />
+                      <Message>Child test failed</Message>
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2012-11-14T17:09:57</TestDate>
+                      <Status>Failure</Status>
+                      <TotalFailures>2</TotalFailures>
+                      <TotalSuccess>0</TotalSuccess>
+                      <TotalIgnored>0</TotalIgnored>
+                      <Time />
+                      <Message>Child test failed</Message>
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2012-11-14T17:12:17</TestDate>
+                      <Status>Failure</Status>
+                      <TotalFailures>2</TotalFailures>
+                      <TotalSuccess>0</TotalSuccess>
+                      <TotalIgnored>0</TotalIgnored>
+                      <Time />
+                      <Message>Child test failed</Message>
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2012-11-14T17:13:28</TestDate>
+                      <Status>Success</Status>
+                      <TotalFailures>0</TotalFailures>
+                      <TotalSuccess>2</TotalSuccess>
+                      <TotalIgnored>0</TotalIgnored>
+                      <Time />
+                      <Message>Test successful
+
+Execution time: 1.11ms</Message>
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2012-11-14T17:16:47</TestDate>
+                      <Status>Success</Status>
+                      <TotalFailures>0</TotalFailures>
+                      <TotalSuccess>2</TotalSuccess>
+                      <TotalIgnored>0</TotalIgnored>
+                      <Time />
+                      <Message>Test successful
+
+Execution time: 1.10ms</Message>
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2012-11-14T17:22:47</TestDate>
+                      <Status>Success</Status>
+                      <TotalFailures>0</TotalFailures>
+                      <TotalSuccess>2</TotalSuccess>
+                      <TotalIgnored>0</TotalIgnored>
+                      <Time />
+                      <Message>Test successful
+
+Execution time: 1.12ms</Message>
                     </UnitTestResult>
                   </Results>
                   <Tests>
@@ -501,6 +846,110 @@
   at DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers () [0x000b5] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:37 
   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
   at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T16:58:23</TestDate>
+                          <Status>Failure</Status>
+                          <TotalFailures>1</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>System.InvalidCastException : Cannot cast from source type to destination type.</Message>
+                          <StackTrace>  at DaisyML.Classifiers.Tests.ClassifierTest.&lt;TestClassifiers&gt;m__1 (IInstance x) [0x00000] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:38 
+  at System.Linq.Enumerable+&lt;CreateSelectIterator&gt;c__Iterator27`2[DaisyML.IInstance,System.String].MoveNext () [0x00000] in &lt;filename unknown&gt;:0 
+  at System.Collections.Generic.HashSet`1[System.String]..ctor (IEnumerable`1 collection, IEqualityComparer`1 comparer) [0x00000] in &lt;filename unknown&gt;:0 
+  at System.Collections.Generic.HashSet`1[System.String]..ctor (IEnumerable`1 collection) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers () [0x000b5] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:37 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T17:07:46</TestDate>
+                          <Status>Failure</Status>
+                          <TotalFailures>1</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>System.InvalidOperationException : Cannot set target of type class.</Message>
+                          <StackTrace>  at DaisyML.Weka.WekaInstance.SetTarget (System.String targetName, System.Object targetValue) [0x00089] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:30 
+  at DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers () [0x0006d] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:29 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T17:09:57</TestDate>
+                          <Status>Failure</Status>
+                          <TotalFailures>1</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>System.InvalidCastException : Cannot cast from source type to destination type.</Message>
+                          <StackTrace>  at DaisyML.Classifiers.Tests.ClassifierTest.&lt;TestClassifiers&gt;m__1 (IInstance x) [0x00000] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:41 
+  at System.Linq.Enumerable+&lt;CreateSelectIterator&gt;c__Iterator27`2[DaisyML.IInstance,System.String].MoveNext () [0x00000] in &lt;filename unknown&gt;:0 
+  at System.Collections.Generic.HashSet`1[System.String]..ctor (IEnumerable`1 collection, IEqualityComparer`1 comparer) [0x00000] in &lt;filename unknown&gt;:0 
+  at System.Collections.Generic.HashSet`1[System.String]..ctor (IEnumerable`1 collection) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers () [0x000d4] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:40 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T17:12:17</TestDate>
+                          <Status>Failure</Status>
+                          <TotalFailures>1</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>System.InvalidCastException : Cannot cast from source type to destination type.</Message>
+                          <StackTrace>  at DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers () [0x00193] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:54 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T17:13:28</TestDate>
+                          <Status>Success</Status>
+                          <TotalFailures>0</TotalFailures>
+                          <TotalSuccess>1</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>Test successful
+
+Execution time: 1.09ms</Message>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T17:16:47</TestDate>
+                          <Status>Success</Status>
+                          <TotalFailures>0</TotalFailures>
+                          <TotalSuccess>1</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>Test successful
+
+Execution time: 1.08ms</Message>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T17:22:47</TestDate>
+                          <Status>Success</Status>
+                          <TotalFailures>0</TotalFailures>
+                          <TotalSuccess>1</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>Test successful
+
+Execution time: 1.10ms</Message>
                           <ConsoleOutput />
                           <ConsoleError />
                         </UnitTestResult>
