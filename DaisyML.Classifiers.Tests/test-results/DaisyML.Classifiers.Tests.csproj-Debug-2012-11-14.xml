@@ -80,12 +80,102 @@
       <Time />
       <Message>Child test failed</Message>
     </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T07:48:26</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>2</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Child test failed</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T07:50:54</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>2</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Child test failed</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T07:54:58</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>2</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Child test failed</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T07:58:10</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>2</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Child test failed</Message>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T08:06:24</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>2</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Child test failed</Message>
+    </UnitTestResult>
   </Results>
   <Tests>
     <TestRecord Name="DaisyML">
       <Results>
         <UnitTestResult>
           <TestDate>2012-11-14T00:17:29</TestDate>
+          <Status>Failure</Status>
+          <TotalFailures>2</TotalFailures>
+          <TotalSuccess>0</TotalSuccess>
+          <TotalIgnored>0</TotalIgnored>
+          <Time />
+          <Message>Child test failed</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-11-14T07:48:26</TestDate>
+          <Status>Failure</Status>
+          <TotalFailures>2</TotalFailures>
+          <TotalSuccess>0</TotalSuccess>
+          <TotalIgnored>0</TotalIgnored>
+          <Time />
+          <Message>Child test failed</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-11-14T07:50:54</TestDate>
+          <Status>Failure</Status>
+          <TotalFailures>2</TotalFailures>
+          <TotalSuccess>0</TotalSuccess>
+          <TotalIgnored>0</TotalIgnored>
+          <Time />
+          <Message>Child test failed</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-11-14T07:54:58</TestDate>
+          <Status>Failure</Status>
+          <TotalFailures>2</TotalFailures>
+          <TotalSuccess>0</TotalSuccess>
+          <TotalIgnored>0</TotalIgnored>
+          <Time />
+          <Message>Child test failed</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-11-14T07:58:10</TestDate>
+          <Status>Failure</Status>
+          <TotalFailures>2</TotalFailures>
+          <TotalSuccess>0</TotalSuccess>
+          <TotalIgnored>0</TotalIgnored>
+          <Time />
+          <Message>Child test failed</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2012-11-14T08:06:24</TestDate>
           <Status>Failure</Status>
           <TotalFailures>2</TotalFailures>
           <TotalSuccess>0</TotalSuccess>
@@ -106,6 +196,51 @@
               <Time />
               <Message>Child test failed</Message>
             </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-11-14T07:48:26</TestDate>
+              <Status>Failure</Status>
+              <TotalFailures>2</TotalFailures>
+              <TotalSuccess>0</TotalSuccess>
+              <TotalIgnored>0</TotalIgnored>
+              <Time />
+              <Message>Child test failed</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-11-14T07:50:54</TestDate>
+              <Status>Failure</Status>
+              <TotalFailures>2</TotalFailures>
+              <TotalSuccess>0</TotalSuccess>
+              <TotalIgnored>0</TotalIgnored>
+              <Time />
+              <Message>Child test failed</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-11-14T07:54:58</TestDate>
+              <Status>Failure</Status>
+              <TotalFailures>2</TotalFailures>
+              <TotalSuccess>0</TotalSuccess>
+              <TotalIgnored>0</TotalIgnored>
+              <Time />
+              <Message>Child test failed</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-11-14T07:58:10</TestDate>
+              <Status>Failure</Status>
+              <TotalFailures>2</TotalFailures>
+              <TotalSuccess>0</TotalSuccess>
+              <TotalIgnored>0</TotalIgnored>
+              <Time />
+              <Message>Child test failed</Message>
+            </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2012-11-14T08:06:24</TestDate>
+              <Status>Failure</Status>
+              <TotalFailures>2</TotalFailures>
+              <TotalSuccess>0</TotalSuccess>
+              <TotalIgnored>0</TotalIgnored>
+              <Time />
+              <Message>Child test failed</Message>
+            </UnitTestResult>
           </Results>
           <Tests>
             <TestRecord Name="Tests">
@@ -119,12 +254,102 @@
                   <Time />
                   <Message>Child test failed</Message>
                 </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-11-14T07:48:26</TestDate>
+                  <Status>Failure</Status>
+                  <TotalFailures>2</TotalFailures>
+                  <TotalSuccess>0</TotalSuccess>
+                  <TotalIgnored>0</TotalIgnored>
+                  <Time />
+                  <Message>Child test failed</Message>
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-11-14T07:50:54</TestDate>
+                  <Status>Failure</Status>
+                  <TotalFailures>2</TotalFailures>
+                  <TotalSuccess>0</TotalSuccess>
+                  <TotalIgnored>0</TotalIgnored>
+                  <Time />
+                  <Message>Child test failed</Message>
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-11-14T07:54:58</TestDate>
+                  <Status>Failure</Status>
+                  <TotalFailures>2</TotalFailures>
+                  <TotalSuccess>0</TotalSuccess>
+                  <TotalIgnored>0</TotalIgnored>
+                  <Time />
+                  <Message>Child test failed</Message>
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-11-14T07:58:10</TestDate>
+                  <Status>Failure</Status>
+                  <TotalFailures>2</TotalFailures>
+                  <TotalSuccess>0</TotalSuccess>
+                  <TotalIgnored>0</TotalIgnored>
+                  <Time />
+                  <Message>Child test failed</Message>
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2012-11-14T08:06:24</TestDate>
+                  <Status>Failure</Status>
+                  <TotalFailures>2</TotalFailures>
+                  <TotalSuccess>0</TotalSuccess>
+                  <TotalIgnored>0</TotalIgnored>
+                  <Time />
+                  <Message>Child test failed</Message>
+                </UnitTestResult>
               </Results>
               <Tests>
                 <TestRecord Name="ClassifierTest">
                   <Results>
                     <UnitTestResult>
                       <TestDate>2012-11-14T00:17:29</TestDate>
+                      <Status>Failure</Status>
+                      <TotalFailures>2</TotalFailures>
+                      <TotalSuccess>0</TotalSuccess>
+                      <TotalIgnored>0</TotalIgnored>
+                      <Time />
+                      <Message>Child test failed</Message>
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2012-11-14T07:48:26</TestDate>
+                      <Status>Failure</Status>
+                      <TotalFailures>2</TotalFailures>
+                      <TotalSuccess>0</TotalSuccess>
+                      <TotalIgnored>0</TotalIgnored>
+                      <Time />
+                      <Message>Child test failed</Message>
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2012-11-14T07:50:54</TestDate>
+                      <Status>Failure</Status>
+                      <TotalFailures>2</TotalFailures>
+                      <TotalSuccess>0</TotalSuccess>
+                      <TotalIgnored>0</TotalIgnored>
+                      <Time />
+                      <Message>Child test failed</Message>
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2012-11-14T07:54:58</TestDate>
+                      <Status>Failure</Status>
+                      <TotalFailures>2</TotalFailures>
+                      <TotalSuccess>0</TotalSuccess>
+                      <TotalIgnored>0</TotalIgnored>
+                      <Time />
+                      <Message>Child test failed</Message>
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2012-11-14T07:58:10</TestDate>
+                      <Status>Failure</Status>
+                      <TotalFailures>2</TotalFailures>
+                      <TotalSuccess>0</TotalSuccess>
+                      <TotalIgnored>0</TotalIgnored>
+                      <Time />
+                      <Message>Child test failed</Message>
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2012-11-14T08:06:24</TestDate>
                       <Status>Failure</Status>
                       <TotalFailures>2</TotalFailures>
                       <TotalSuccess>0</TotalSuccess>
@@ -161,7 +386,126 @@
                           <ConsoleOutput />
                           <ConsoleError />
                         </UnitTestResult>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T07:48:26</TestDate>
+                          <Status>Failure</Status>
+                          <TotalFailures>1</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>System.ArgumentException : Duplicate type name within an assembly.</Message>
+                          <StackTrace>  at System.Reflection.Emit.ModuleBuilder.DefineEnum (System.String name, TypeAttributes visibility, System.Type underlyingType) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Weka.EnumRepository.GetEnumType (weka.core.Attribute attribute) [0x00025] in /home/daoud/git/DaisyML/DaisyML.Weka/EnumRepository.cs:44 
+  at DaisyML.Weka.EnumRepository.GetEnumValue (weka.core.Attribute attribute, Int32 enumValue) [0x00000] in /home/daoud/git/DaisyML/DaisyML.Weka/EnumRepository.cs:32 
+  at DaisyML.Weka.WekaInstance.GetInstanceValue (weka.core.Attribute attribute) [0x0000b] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:74 
+  at DaisyML.Weka.WekaInstance.GetInstanceValue (Int32 index) [0x0000d] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:68 
+  at DaisyML.Weka.WekaInstance+&lt;&gt;c__Iterator3.MoveNext () [0x00037] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:49 
+  at System.Linq.Enumerable.First[KeyValuePair`2] (IEnumerable`1 source) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Classifiers.Tests.ClassifierTest.&lt;TestClassifiers&gt;m__0 (IInstance x) [0x00000] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:29 
+  at System.Linq.Enumerable+&lt;CreateSelectIterator&gt;c__Iterator27`2[DaisyML.IInstance,System.Object].MoveNext () [0x00000] in &lt;filename unknown&gt;:0 
+  at System.Linq.Enumerable+&lt;CreateDistinctIterator&gt;c__Iterator1A`1[System.Object].MoveNext () [0x00000] in &lt;filename unknown&gt;:0 
+  at System.Linq.Enumerable.Count[Object] (IEnumerable`1 source) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers () [0x0006a] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:29 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T07:50:54</TestDate>
+                          <Status>Failure</Status>
+                          <TotalFailures>1</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>System.ArgumentException : Duplicate type name within an assembly.</Message>
+                          <StackTrace>  at System.Reflection.Emit.ModuleBuilder.DefineEnum (System.String name, TypeAttributes visibility, System.Type underlyingType) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Weka.EnumRepository.GetEnumType (weka.core.Attribute attribute) [0x00025] in /home/daoud/git/DaisyML/DaisyML.Weka/EnumRepository.cs:44 
+  at DaisyML.Weka.EnumRepository.GetEnumValue (weka.core.Attribute attribute, Int32 enumValue) [0x00000] in /home/daoud/git/DaisyML/DaisyML.Weka/EnumRepository.cs:32 
+  at DaisyML.Weka.WekaInstance.GetInstanceValue (weka.core.Attribute attribute) [0x0000b] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:74 
+  at DaisyML.Weka.WekaInstance.GetInstanceValue (Int32 index) [0x0000d] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:68 
+  at DaisyML.Weka.WekaInstance+&lt;&gt;c__Iterator3.MoveNext () [0x00037] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:49 
+  at System.Linq.Enumerable.First[KeyValuePair`2] (IEnumerable`1 source) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Classifiers.Tests.ClassifierTest.&lt;TestClassifiers&gt;m__0 (IInstance x) [0x00000] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:29 
+  at System.Linq.Enumerable+&lt;CreateSelectIterator&gt;c__Iterator27`2[DaisyML.IInstance,System.Object].MoveNext () [0x00000] in &lt;filename unknown&gt;:0 
+  at System.Linq.Enumerable+&lt;CreateDistinctIterator&gt;c__Iterator1A`1[System.Object].MoveNext () [0x00000] in &lt;filename unknown&gt;:0 
+  at System.Linq.Enumerable.Count[Object] (IEnumerable`1 source) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers () [0x0006a] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:29 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T07:54:58</TestDate>
+                          <Status>Failure</Status>
+                          <TotalFailures>1</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>System.ArgumentException : Duplicate type name within an assembly.</Message>
+                          <StackTrace>  at System.Reflection.Emit.ModuleBuilder.DefineEnum (System.String name, TypeAttributes visibility, System.Type underlyingType) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Weka.EnumRepository.GetEnumType (weka.core.Attribute attribute) [0x00025] in /home/daoud/git/DaisyML/DaisyML.Weka/EnumRepository.cs:44 
+  at DaisyML.Weka.EnumRepository.GetEnumValue (weka.core.Attribute attribute, Int32 enumValue) [0x00000] in /home/daoud/git/DaisyML/DaisyML.Weka/EnumRepository.cs:32 
+  at DaisyML.Weka.WekaInstance.GetInstanceValue (weka.core.Attribute attribute) [0x0000b] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:74 
+  at DaisyML.Weka.WekaInstance.GetInstanceValue (Int32 index) [0x0000d] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:68 
+  at DaisyML.Weka.WekaInstance+&lt;&gt;c__Iterator3.MoveNext () [0x00037] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:49 
+  at System.Linq.Enumerable.First[KeyValuePair`2] (IEnumerable`1 source) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Classifiers.Tests.ClassifierTest.&lt;TestClassifiers&gt;m__0 (IInstance x) [0x00000] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:29 
+  at System.Linq.Enumerable+&lt;CreateSelectIterator&gt;c__Iterator27`2[DaisyML.IInstance,System.Object].MoveNext () [0x00000] in &lt;filename unknown&gt;:0 
+  at System.Linq.Enumerable+&lt;CreateDistinctIterator&gt;c__Iterator1A`1[System.Object].MoveNext () [0x00000] in &lt;filename unknown&gt;:0 
+  at System.Linq.Enumerable.Count[Object] (IEnumerable`1 source) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers () [0x0006a] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:29 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T07:58:10</TestDate>
+                          <Status>Failure</Status>
+                          <TotalFailures>1</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>System.ArgumentException : Duplicate type name within an assembly.</Message>
+                          <StackTrace>  at System.Reflection.Emit.ModuleBuilder.DefineEnum (System.String name, TypeAttributes visibility, System.Type underlyingType) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Weka.EnumRepository.GetEnumType (weka.core.Attribute attribute) [0x00025] in /home/daoud/git/DaisyML/DaisyML.Weka/EnumRepository.cs:44 
+  at DaisyML.Weka.EnumRepository.GetEnumValue (weka.core.Attribute attribute, Int32 enumValue) [0x00000] in /home/daoud/git/DaisyML/DaisyML.Weka/EnumRepository.cs:32 
+  at DaisyML.Weka.WekaInstance.GetInstanceValue (weka.core.Attribute attribute) [0x0000b] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:74 
+  at DaisyML.Weka.WekaInstance.GetInstanceValue (Int32 index) [0x0000d] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:68 
+  at DaisyML.Weka.WekaInstance+&lt;&gt;c__Iterator3.MoveNext () [0x00037] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:49 
+  at System.Linq.Enumerable.First[KeyValuePair`2] (IEnumerable`1 source) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Classifiers.Tests.ClassifierTest.&lt;TestClassifiers&gt;m__0 (IInstance x) [0x00000] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:29 
+  at System.Linq.Enumerable+&lt;CreateSelectIterator&gt;c__Iterator27`2[DaisyML.IInstance,System.Object].MoveNext () [0x00000] in &lt;filename unknown&gt;:0 
+  at System.Linq.Enumerable+&lt;CreateDistinctIterator&gt;c__Iterator1A`1[System.Object].MoveNext () [0x00000] in &lt;filename unknown&gt;:0 
+  at System.Linq.Enumerable.Count[Object] (IEnumerable`1 source) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers () [0x0006a] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:29 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T08:06:24</TestDate>
+                          <Status>Failure</Status>
+                          <TotalFailures>1</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>System.InvalidCastException : Cannot cast from source type to destination type.</Message>
+                          <StackTrace>  at DaisyML.Classifiers.Tests.ClassifierTest.&lt;TestClassifiers&gt;m__1 (IInstance x) [0x00000] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:38 
+  at System.Linq.Enumerable+&lt;CreateSelectIterator&gt;c__Iterator27`2[DaisyML.IInstance,System.String].MoveNext () [0x00000] in &lt;filename unknown&gt;:0 
+  at System.Collections.Generic.HashSet`1[System.String]..ctor (IEnumerable`1 collection, IEqualityComparer`1 comparer) [0x00000] in &lt;filename unknown&gt;:0 
+  at System.Collections.Generic.HashSet`1[System.String]..ctor (IEnumerable`1 collection) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Classifiers.Tests.ClassifierTest.TestClassifiers () [0x000b5] in /home/daoud/git/DaisyML/DaisyML.Classifiers.Tests/ClassifierTest.cs:37 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
                       </Results>
+                      <Tests />
                     </TestRecord>
                   </Tests>
                 </TestRecord>

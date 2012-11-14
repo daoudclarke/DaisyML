@@ -30,7 +30,7 @@ namespace DaisyML.Weka.Tests
 			// Assert
 			var fields = enumValue.GetType().GetFields();
 			Assert.AreEqual(3, fields.Length);
-			Assert.AreEqual("beech", fields[0]);
+			Assert.AreEqual("beech", fields[0].Name);
 		}
 	}
 }

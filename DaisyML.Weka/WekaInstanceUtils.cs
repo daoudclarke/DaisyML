@@ -107,6 +107,14 @@ namespace DaisyML.Weka
 						vector.addElement(v);
 					}
 					wekaAttribute = new weka.core.Attribute(attribute.Key, vector);
+				} else if (attribute.Value.IsEnum) {
+					var values = attribute.Value.GetFields()
+									.Select(x => x.Name).ToArray();
+					var vector = new weka.core.FastVector (values.Length);
+					foreach (var v in values) {
+						vector.addElement (v);
+					}
+					wekaAttribute = new weka.core.Attribute (attribute.Key, vector);
 				} else {
 					throw new NotSupportedException(
 			          "This type of feature is not supported for this operation.");

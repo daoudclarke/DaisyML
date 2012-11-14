@@ -35,7 +35,7 @@ namespace DaisyML.Weka.Tests
 				fruit = TestEnum.orange,
 				target = 2.0 };
 			Assert.AreEqual(1, instance.Targets.Count());
-			Assert.AreEqual(1, instance.Features.Count());
+			Assert.AreEqual(2, instance.Features.Count());
 			
 			
 			var converted = WekaInstanceUtils.ConvertToWeka(new [] {instance});
@@ -44,10 +44,11 @@ namespace DaisyML.Weka.Tests
 			var expected = @"@relation DaisyML.Weka.Tests.TestInstance
 
 @attribute feature numeric
+@attribute fruit {value__,apple,orange,banana}
 @attribute target numeric
 
 @data
-1,2";
+1,orange,2";
 			var data = converted.ToString();
 			Console.WriteLine(data);
 			Assert.AreEqual(expected, data, "Conversion to Weka format incorrect."); 

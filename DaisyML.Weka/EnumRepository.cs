@@ -35,17 +35,16 @@ namespace DaisyML.Weka
 		
 		private Type GetEnumType(weka.core.Attribute attribute)
 		{
-			var enumType =_builder.Assembly.GetType(attribute.name());
+			var attributeName = attribute.name();
+			var enumType =_builder.Assembly.GetType(attributeName);
 			if (enumType != null) {
 				return enumType;
 			}
 
 			// Define a public enumeration with the name "MyEnum" and an underlying type of Integer.
-			EnumBuilder myEnum = _builder.DefineEnum ("EnumeratedTypes.MyEnum",
+			EnumBuilder myEnum = _builder.DefineEnum (attributeName,
 			                         TypeAttributes.Public, typeof(int));
-			
-
-			
+						
 			for (int i=0; i<attribute.numValues(); ++i) {
 				var name = attribute.value(i);
 				myEnum.DefineLiteral (name, i);
