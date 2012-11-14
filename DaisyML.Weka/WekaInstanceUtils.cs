@@ -22,6 +22,8 @@ namespace DaisyML.Weka
 				return (int)val;						
 			} else if (val.GetType() == typeof(string)) {
 				return attribute.indexOfValue((string)val);
+			} else if (val.GetType().IsEnum) {
+				return attribute.indexOfValue(val.ToString());
 			} else {
 				throw new InvalidOperationException(String.Format(
 				  "This operation does not support the type {0}",

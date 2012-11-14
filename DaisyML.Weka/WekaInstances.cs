@@ -8,7 +8,8 @@ namespace DaisyML.Weka
 	public class WekaInstances : IEnumerable<IInstance>
 	{
 		private weka.core.Instances _instances;
-
+		private EnumRepository _repository = new EnumRepository();
+		
 		public WekaInstances (weka.core.Instances instances)
 		{
 			_instances = instances;
@@ -23,7 +24,7 @@ namespace DaisyML.Weka
 		{
 			for (int i=0; i<_instances.numInstances(); ++i) {
 				var instance = _instances.instance(i);
-				yield return new WekaInstance(instance);
+				yield return new WekaInstance(instance, _repository);
 			}
 		}
 		

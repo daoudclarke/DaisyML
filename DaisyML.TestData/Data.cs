@@ -10,10 +10,13 @@ namespace DaisyML.TestData
 	{
 		public static IEnumerable<IEnumerable<IInstance>> GetTestInstances() {
 			var assembly = System.Reflection.Assembly.GetAssembly(typeof(Data));
-			var stream = assembly.GetManifestResourceStream(
-				  "DaisyML.TestData.Resources.iris.arff");
+			var names = assembly.GetManifestResourceNames();
+			foreach (var name in names) {
+				var stream = assembly.GetManifestResourceStream(
+				  name);
 			
-			yield return InstanceUtils.LoadInstancesFromArff(stream);
+				yield return InstanceUtils.LoadInstancesFromArff(stream);
+			}
 		}
 	}
 }

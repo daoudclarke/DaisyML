@@ -9,9 +9,16 @@ using DaisyML.Weka;
 
 namespace DaisyML.Weka.Tests
 {
+	enum TestEnum {
+		apple, orange, banana
+	}
+	
 	class TestInstance : Instance {
 		[Feature]
 		public int feature;
+
+		[Feature]
+		public TestEnum fruit;
 		
 		[Target]
 		public double target;
@@ -25,6 +32,7 @@ namespace DaisyML.Weka.Tests
 		{
 			var instance = new TestInstance() {
 				feature = 1,
+				fruit = TestEnum.orange,
 				target = 2.0 };
 			Assert.AreEqual(1, instance.Targets.Count());
 			Assert.AreEqual(1, instance.Features.Count());

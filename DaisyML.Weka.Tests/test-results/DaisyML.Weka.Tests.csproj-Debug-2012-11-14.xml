@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <UnitTestResult>
+      <TestDate>2012-11-14T00:02:04</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>0</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Could not load type 'NUnit.Core.RemoteTestRunner' from assembly 'nunit.core, Version=2.5.10.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77'.</Message>
+      <StackTrace>  at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke (System.Runtime.Remoting.Proxies.RealProxy rp, IMessage msg, System.Exception&amp; exc, System.Object[]&amp; out_args) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T00:04:19</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>0</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Could not load type 'NUnit.Core.RemoteTestRunner' from assembly 'nunit.core, Version=2.5.10.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77'.</Message>
+      <StackTrace>  at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke (System.Runtime.Remoting.Proxies.RealProxy rp, IMessage msg, System.Exception&amp; exc, System.Object[]&amp; out_args) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T00:06:39</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>0</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Could not load type 'NUnit.Core.RemoteTestRunner' from assembly 'nunit.core, Version=2.5.10.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77'.</Message>
+      <StackTrace>  at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke (System.Runtime.Remoting.Proxies.RealProxy rp, IMessage msg, System.Exception&amp; exc, System.Object[]&amp; out_args) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T00:08:41</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>0</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Could not load type 'NUnit.Core.RemoteTestRunner' from assembly 'nunit.core, Version=2.5.10.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77'.</Message>
+      <StackTrace>  at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke (System.Runtime.Remoting.Proxies.RealProxy rp, IMessage msg, System.Exception&amp; exc, System.Object[]&amp; out_args) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T00:13:09</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>0</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Could not load type 'NUnit.Core.RemoteTestRunner' from assembly 'nunit.core, Version=2.5.10.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77'.</Message>
+      <StackTrace>  at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke (System.Runtime.Remoting.Proxies.RealProxy rp, IMessage msg, System.Exception&amp; exc, System.Object[]&amp; out_args) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T00:14:03</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>0</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Could not load file or assembly '/home/daoud/git/DaisyML/DaisyML.Weka.Tests/bin/Debug/DaisyML.Weka.Tests.dll' or one of its dependencies. The system cannot find the file specified.</Message>
+      <StackTrace>  at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke (System.Runtime.Remoting.Proxies.RealProxy rp, IMessage msg, System.Exception&amp; exc, System.Object[]&amp; out_args) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2012-11-14T00:17:29</TestDate>
+      <Status>Failure</Status>
+      <TotalFailures>2</TotalFailures>
+      <TotalSuccess>0</TotalSuccess>
+      <TotalIgnored>0</TotalIgnored>
+      <Time />
+      <Message>Child test failed</Message>
+    </UnitTestResult>
+  </Results>
+  <Tests>
+    <TestRecord Name="DaisyML">
+      <Results>
+        <UnitTestResult>
+          <TestDate>2012-11-14T00:17:29</TestDate>
+          <Status>Failure</Status>
+          <TotalFailures>2</TotalFailures>
+          <TotalSuccess>0</TotalSuccess>
+          <TotalIgnored>0</TotalIgnored>
+          <Time />
+          <Message>Child test failed</Message>
+        </UnitTestResult>
+      </Results>
+      <Tests>
+        <TestRecord Name="Weka">
+          <Results>
+            <UnitTestResult>
+              <TestDate>2012-11-14T00:17:29</TestDate>
+              <Status>Failure</Status>
+              <TotalFailures>2</TotalFailures>
+              <TotalSuccess>0</TotalSuccess>
+              <TotalIgnored>0</TotalIgnored>
+              <Time />
+              <Message>Child test failed</Message>
+            </UnitTestResult>
+          </Results>
+          <Tests>
+            <TestRecord Name="Tests">
+              <Results>
+                <UnitTestResult>
+                  <TestDate>2012-11-14T00:17:29</TestDate>
+                  <Status>Failure</Status>
+                  <TotalFailures>3</TotalFailures>
+                  <TotalSuccess>0</TotalSuccess>
+                  <TotalIgnored>0</TotalIgnored>
+                  <Time />
+                  <Message>Child test failed</Message>
+                </UnitTestResult>
+              </Results>
+              <Tests>
+                <TestRecord Name="EnumRepositoryTests">
+                  <Results>
+                    <UnitTestResult>
+                      <TestDate>2012-11-14T00:17:29</TestDate>
+                      <Status>Failure</Status>
+                      <TotalFailures>2</TotalFailures>
+                      <TotalSuccess>0</TotalSuccess>
+                      <TotalIgnored>0</TotalIgnored>
+                      <Time />
+                      <Message>Child test failed</Message>
+                    </UnitTestResult>
+                  </Results>
+                  <Tests>
+                    <TestRecord Name="TestCreationOfEnums">
+                      <Results>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T00:17:29</TestDate>
+                          <Status>Failure</Status>
+                          <TotalFailures>1</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>  Expected: "beech"
+  But was:  &lt;EnumeratedTypes.MyEnum beech&gt;
+</Message>
+                          <StackTrace>  at NUnit.Framework.Assert.That (System.Object actual, IResolveConstraint expression, System.String message, System.Object[] args) [0x00000] in &lt;filename unknown&gt;:0 
+  at NUnit.Framework.Assert.AreEqual (System.Object expected, System.Object actual) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Weka.Tests.EnumRepositoryTests.TestCreationOfEnums () [0x00059] in /home/daoud/git/DaisyML/DaisyML.Weka.Tests/EnumRepositoryTests.cs:33 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                      </Results>
+                    </TestRecord>
+                  </Tests>
+                </TestRecord>
+                <TestRecord Name="WekaInstanceUtilsTest">
+                  <Results>
+                    <UnitTestResult>
+                      <TestDate>2012-11-14T00:17:29</TestDate>
+                      <Status>Failure</Status>
+                      <TotalFailures>3</TotalFailures>
+                      <TotalSuccess>0</TotalSuccess>
+                      <TotalIgnored>0</TotalIgnored>
+                      <Time />
+                      <Message>Child test failed</Message>
+                    </UnitTestResult>
+                  </Results>
+                  <Tests>
+                    <TestRecord Name="TestConvertFromAndToWeka">
+                      <Results>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T00:17:29</TestDate>
+                          <Status>Failure</Status>
+                          <TotalFailures>1</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>System.ArgumentException : Duplicate type name within an assembly.</Message>
+                          <StackTrace>  at System.Reflection.Emit.ModuleBuilder.DefineEnum (System.String name, TypeAttributes visibility, System.Type underlyingType) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Weka.EnumRepository.GetEnumType (weka.core.Attribute attribute) [0x00025] in /home/daoud/git/DaisyML/DaisyML.Weka/EnumRepository.cs:44 
+  at DaisyML.Weka.EnumRepository.GetEnumValue (weka.core.Attribute attribute, Int32 enumValue) [0x00000] in /home/daoud/git/DaisyML/DaisyML.Weka/EnumRepository.cs:32 
+  at DaisyML.Weka.WekaInstance.GetInstanceValue (weka.core.Attribute attribute) [0x0000b] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:74 
+  at DaisyML.Weka.WekaInstance.GetInstanceValue (Int32 index) [0x0000d] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:68 
+  at DaisyML.Weka.WekaInstance+&lt;&gt;c__Iterator3.MoveNext () [0x00037] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstance.cs:49 
+  at System.Linq.Enumerable+&lt;CreateConcatIterator&gt;c__Iterator18`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Object]].MoveNext () [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Weka.WekaInstanceUtils.GetWekaAttributes[IInstance] (IEnumerable`1 instances) [0x0006a] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstanceUtils.cs:89 
+  at DaisyML.Weka.WekaInstanceUtils.ConvertToWeka[IInstance] (IEnumerable`1 instances) [0x00015] in /home/daoud/git/DaisyML/DaisyML.Weka/WekaInstanceUtils.cs:48 
+  at DaisyML.Weka.Tests.WekaInstanceUtilsTest.TestConvertFromAndToWeka () [0x000bd] in /home/daoud/git/DaisyML/DaisyML.Weka.Tests/WekaInstanceUtilsTest.cs:70 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                      </Results>
+                    </TestRecord>
+                    <TestRecord Name="TestConvertToWeka">
+                      <Results>
+                        <UnitTestResult>
+                          <TestDate>2012-11-14T00:17:29</TestDate>
+                          <Status>Failure</Status>
+                          <TotalFailures>1</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>0</TotalIgnored>
+                          <Time />
+                          <Message>  Expected: 1
+  But was:  2
+</Message>
+                          <StackTrace>  at NUnit.Framework.Assert.That (System.Object actual, IResolveConstraint expression, System.String message, System.Object[] args) [0x00000] in &lt;filename unknown&gt;:0 
+  at NUnit.Framework.Assert.AreEqual (Int32 expected, Int32 actual) [0x00000] in &lt;filename unknown&gt;:0 
+  at DaisyML.Weka.Tests.WekaInstanceUtilsTest.TestConvertToWeka () [0x00036] in /home/daoud/git/DaisyML/DaisyML.Weka.Tests/WekaInstanceUtilsTest.cs:38 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                      </Results>
+                    </TestRecord>
+                  </Tests>
+                </TestRecord>
+              </Tests>
+            </TestRecord>
+          </Tests>
+        </TestRecord>
+      </Tests>
+    </TestRecord>
+  </Tests>
+</TestRecord>

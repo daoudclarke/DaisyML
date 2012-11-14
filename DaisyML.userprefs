@@ -1,17 +1,46 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assembly Browser" ctype="Workbench">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DaisyML.Classifiers.Tests/ClassifierTest.cs">
     <Files>
       <File FileName="DaisyML/IClassifier.cs" Line="1" Column="1" />
-      <File FileName="DaisyML.Tests/InstanceTest.cs" Line="27" Column="12" />
+      <File FileName="DaisyML.Tests/InstanceTest.cs" Line="6" Column="1" />
       <File FileName="DaisyML/Feature.cs" Line="4" Column="2" />
-      <File FileName="Assembly Browser" />
-      <File FileName="DaisyML.Tests/Main.cs" Line="2" Column="25" />
+      <File FileName="DaisyML.Tests/Main.cs" Line="4" Column="13" />
       <File FileName="DaisyML/Instance.cs" Line="2" Column="31" />
+      <File FileName="DaisyML.Weka.Tests/WekaInstanceUtilsTest.cs" Line="1" Column="1" />
+      <File FileName="DaisyML.Weka/EnumRepository.cs" Line="50" Column="35" />
+      <File FileName="DaisyML.Weka.Tests/EnumRepositoryTests.cs" Line="19" Column="42" />
+      <File FileName="DaisyML.Weka/WekaInstance.cs" Line="78" Column="66" />
+      <File FileName="DaisyML.Weka/WekaInstanceUtils.cs" Line="32" Column="4" />
+      <File FileName="DaisyML.Weka/WekaInstances.cs" Line="8" Column="50" />
+      <File FileName="DaisyML.Utils/InstanceUtils.cs" Line="19" Column="46" />
+      <File FileName="DaisyML.Classifiers/NaiveBayesModel.cs" Line="12" Column="25" />
+      <File FileName="DaisyML.Weka.Tests/Main.cs" Line="4" Column="13" />
+      <File FileName="DaisyML.Classifiers.Tests/ClassifierTest.cs" Line="6" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="DaisyML.Classifiers.Tests" expanded="True" selected="True">
+            <Node name="References" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/home/daoud/git/DaisyML/DaisyML.Weka.Tests/Main.cs" line="12" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

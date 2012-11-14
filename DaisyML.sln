@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaisyML", "DaisyML\DaisyML.csproj", "{A78423E8-BA76-490D-8AA6-A1BB67E64670}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaisyML.Tests", "DaisyML.Tests\DaisyML.Tests.csproj", "{9EB4483C-EDC8-4B21-9541-21F32AF1B4BD}"
@@ -57,6 +57,6 @@ Global
 		{B500FD7E-23EB-4BF8-9659-B9CEEE60A711}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = DaisyML.Classifiers.Tests\DaisyML.Classifiers.Tests.csproj
+		StartupItem = DaisyML.Weka.Tests\DaisyML.Weka.Tests.csproj
 	EndGlobalSection
 EndGlobal

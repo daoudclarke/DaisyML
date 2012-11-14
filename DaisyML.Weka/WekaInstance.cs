@@ -1,14 +1,19 @@
 using System;
 using System.Collections.Generic;
 
+using DaisyML;
+
 namespace DaisyML.Weka
 {
 	internal class WekaInstance : IInstance
 	{
 		private weka.core.Instance _instance;
-			
-		internal WekaInstance(weka.core.Instance instance) {
+	
+		private EnumRepository _repository;
+							
+		internal WekaInstance(weka.core.Instance instance, EnumRepository repository) {
 			_instance = instance;
+			_repository = repository;
 		}
 		
 		#region IInstance implementation
@@ -27,19 +32,6 @@ namespace DaisyML.Weka
 			}
 		}
 		
-		private KeyValuePair<string, object> GetInstanceValue(int index)
-		{
-			var attribute = _instance.attribute(index);
-			if (attribute.isNominal() || attribute.isString()) {
-				return new KeyValuePair<string, object>(
-				  attribute.name(), _instance.stringValue(index));				
-			} else {
-				return new KeyValuePair<string, object>(
-				  attribute.name(), _instance.value(index));
-			}
-		}
-
-		
 		public IEnumerable<KeyValuePair<string, object>> Features {
 			get {
 				for (int i=0; i<_instance.numAttributes(); ++i) {
@@ -49,8 +41,7 @@ namespace DaisyML.Weka
 					yield return GetInstanceValue(i);
 				}
 			}
-		}
-		
+		}		
 		
 		public IEnumerable<KeyValuePair<string, object>> Targets {
 			get {
@@ -61,10 +52,7 @@ namespace DaisyML.Weka
 
 		public object GetValue(string attributeName) {
 			var attribute = _instance.dataset().attribute(attributeName);
-			if (attribute.isString() || attribute.isNominal()) {
-				return _instance.stringValue(attribute);
-			}
-			return _instance.value(attribute);
+			return GetInstanceValue(attribute);
 		}
 		
 		public string TypeIdentifier { get {
@@ -73,6 +61,26 @@ namespace DaisyML.Weka
 		}
 		
 		#endregion
+	
+		private KeyValuePair<string, object> GetInstanceValue (int index)
+		{
+			var attribute = _instance.attribute (index);
+			return GetInstanceValue (attribute);		
+		}
+		
+		private KeyValuePair<string, object> GetInstanceValue (weka.core.Attribute attribute)
+		{
+			if (attribute.isNominal ()) {
+				var enumValue = _repository.GetEnumValue(attribute, (int)_instance.value(attribute));
+				return new KeyValuePair<string, object>(attribute.name(), enumValue);
+			} else if (attribute.isString ()) {
+				return new KeyValuePair<string, object> (
+				  attribute.name (), _instance.stringValue (attribute.index()));				
+			} else {
+				return new KeyValuePair<string, object> (
+				  attribute.name (), _instance.value (attribute.index()));
+			}
+		}		
 	}
 }
 
