@@ -20,6 +20,12 @@ namespace DaisyML.Weka.Tests
 		[Feature]
 		public TestEnum fruit;
 		
+		[Feature]
+		public double? nullable;
+		
+		[Feature]
+		public double? notNull;
+						
 		[Target]
 		public double target;
 	}
@@ -33,9 +39,13 @@ namespace DaisyML.Weka.Tests
 			var instance = new TestInstance() {
 				feature = 1,
 				fruit = TestEnum.orange,
+				nullable = null,
+				notNull = 3.0,
 				target = 2.0 };
-			Assert.AreEqual(1, instance.Targets.Count());
-			Assert.AreEqual(2, instance.Features.Count());
+			Assert.AreEqual(1, instance.NumericTargets.Count());
+			Assert.AreEqual(0, instance.NominalTargets.Count());
+			Assert.AreEqual(3, instance.NumericFeatures.Count());
+			Assert.AreEqual(1, instance.NominalFeatures.Count ());
 			
 			
 			var converted = WekaInstanceUtils.ConvertToWeka(new [] {instance});
@@ -54,13 +64,19 @@ namespace DaisyML.Weka.Tests
 			Assert.AreEqual(expected, data, "Conversion to Weka format incorrect."); 
 		}
 		
+//		public void CastTest() {
+//			IEnumerable<int?> ints = new int?[] {1,2,3};
+//			IEnumerable<object> objects = ints;
+//		}
+		
 		[Test]
 		public void TestConvertFromAndToWeka()
 		{
 			// Arrange
 			var data = TestData.Data.GetTestInstances();
 			foreach (var instances in data) {
-				Assert.Less(instances.First().Targets.Count(), 2);
+				Assert.Less(instances.First().NumericTargets.Count()
+					+ instances.First().NominalTargets.Count(), 2);
 				var wekaInstances = (WekaInstances)instances;
 				var originalArff = wekaInstances.GetArff();
 				var converted = WekaInstanceUtils.ConvertToWeka(wekaInstances);

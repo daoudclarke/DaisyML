@@ -16,6 +16,9 @@ namespace DaisyML
 		/// </returns>
 		IModel<T> Train<T>(IEnumerable<T> trainingData)
 			where T : IInstance;
+
+//		void AddDataPoint (TFeatures features, TTarget target);
+//		TTarget Classify (TFeatures features);
 	}
 }
 

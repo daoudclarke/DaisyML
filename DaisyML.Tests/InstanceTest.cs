@@ -29,16 +29,17 @@ namespace DaisyML.Tests
 				Name = "test",
 				Length = 2.3
 			};
-			var values = instance.Features.OrderBy(x => x.Key).ToArray();
+			var stringValues = instance.StringFeatures.OrderBy(x => x.Name).ToArray();
+			var numericValues = instance.NumericFeatures.OrderBy(x => x.Name).ToArray();
 
-			Assert.AreEqual(3, values.Length);
-			Assert.AreEqual("Length", values[0].Key);
-			Assert.AreEqual("Name", values[1].Key);
-			Assert.AreEqual("Size", values[2].Key);
+			Assert.AreEqual(1, stringValues.Length);
+			Assert.AreEqual("Length", numericValues[0].Name);
+			Assert.AreEqual("Name", stringValues[0].Name);
+			Assert.AreEqual("Size", numericValues[1].Name);
 
-			Assert.AreEqual(2.3, values[0].Value);
-			Assert.AreEqual("test", values[1].Value);
-			Assert.AreEqual(1, values[2].Value);
+			Assert.AreEqual(2.3, numericValues[0].Value);
+			Assert.AreEqual("test", stringValues[0].Value);
+			Assert.AreEqual(1, numericValues[1].Value);
 		}
 	}
 }

@@ -26,11 +26,11 @@ namespace DaisyML.Weka
 			
 		}
 		
-		public object GetEnumValue(weka.core.Attribute attribute,
+		public Enum GetEnumValue(weka.core.Attribute attribute,
 			                       int enumValue)
 		{
 			var enumType = GetEnumType(attribute);
-			return Enum.ToObject(enumType, enumValue);
+			return (Enum)Enum.ToObject(enumType, enumValue);
 		}
 		
 		private Type GetEnumType(weka.core.Attribute attribute)

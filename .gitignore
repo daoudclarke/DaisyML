@@ -11,3 +11,4 @@
 
 # Except anything in the lib folder
 !/lib/*
+test-results

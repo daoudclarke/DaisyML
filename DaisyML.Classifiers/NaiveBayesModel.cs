@@ -17,12 +17,17 @@ namespace DaisyML.Classifiers
 		}
 		
 		public void Classify(ref T instance) {
-			if (instance.Targets.Count() != 1) {
+			
+			string targetName;
+			if (instance.NumericTargets.Count() > 0) {
+				targetName = instance.NumericTargets.First().Name;
+			} else if (instance.NominalTargets.Count() > 0) {
+				targetName = instance.NominalTargets.First().Name;			
+			} else {
 				throw new InvalidOperationException(
 				  "Wrong number of targets for classification. " +
 				  "This classifier needs instances with exactly one target.");
 			}
-			string targetName = instance.Targets.First().Key;
 			
 			var wekaInstances = WekaInstanceUtils.ConvertToWeka(
 			  new T[] {instance});

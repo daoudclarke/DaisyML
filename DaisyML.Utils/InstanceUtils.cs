@@ -23,7 +23,7 @@ namespace DaisyML.Utils
 			arffLoader.setSource(javaStream);
 			var wekaInstances = arffLoader.getDataSet();
 			wekaInstances.setClassIndex(wekaInstances.numAttributes() - 1);
-			return WekaInstanceUtils.ConvertFromWeka(wekaInstances);			
+			return new WekaInstances(wekaInstances);
 		}
 		
 		/// <summary>

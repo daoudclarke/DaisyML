@@ -64,6 +64,7 @@
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="WekaInstanceUtilsTest.cs" />
     <Compile Include="EnumRepositoryTests.cs" />
+    <Compile Include="WekaCapabilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DaisyML.Weka\DaisyML.Weka.csproj">
