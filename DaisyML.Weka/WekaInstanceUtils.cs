@@ -71,9 +71,9 @@ namespace DaisyML.Weka
 					.Concat(instance.MissingTargets)) {
 					values[feature.Name] = 0.0;
 				}
-				
-				Debug.Fail("This is a test.");
-				Debug.Assert(values.Keys.SequenceEqual(wekaAttributes.Keys));
+
+				Debug.Assert(values.Keys.SequenceEqual(wekaAttributes.Keys),
+					"Attribute keys should be equal.");
 				
 				var attributeNames = wekaAttributes.Keys.ToList();
 				var wekaInstance = new weka.core.Instance(1.0, values.Values.ToArray());

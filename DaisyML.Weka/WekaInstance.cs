@@ -21,7 +21,9 @@ namespace DaisyML.Weka
 			get {
 				for (int i=0; i<_instance.numAttributes(); ++i) {
 					var attribute = _instance.attribute(i);
-					if (attribute.isString()) {
+					if (attribute.isString()
+						 && !_instance.isMissing(attribute)
+						 && i != _instance.classIndex()) {
 						yield return new Attribute<string>(
 							attribute.name(), _instance.stringValue(i));
 					}
@@ -33,7 +35,9 @@ namespace DaisyML.Weka
 			get {
 				for (int i=0; i<_instance.numAttributes(); ++i) {
 					var attribute = _instance.attribute (i);
-					if (attribute.isNumeric()) {
+					if (attribute.isNumeric()
+						 && !_instance.isMissing (attribute)
+						 && i != _instance.classIndex ()) {
 						yield return new Attribute<double>(
 							attribute.name(), _instance.value(i));
 					}
@@ -45,7 +49,9 @@ namespace DaisyML.Weka
 			get {
 				for (int i=0; i<_instance.numAttributes(); ++i) {
 					var attribute = _instance.attribute (i);
-					if (attribute.isNominal()) {
+					if (attribute.isNominal()
+						&& !_instance.isMissing (attribute)
+						&& i != _instance.classIndex ()) {
 						yield return new Attribute<Enum>(
 							attribute.name(),
 							_repository.GetEnumValue(attribute,
@@ -59,7 +65,8 @@ namespace DaisyML.Weka
 			get {
 				for (int i=0; i<_instance.numAttributes(); ++i) {
 					var attribute = _instance.attribute (i);
-					if (_instance.isMissing(attribute)) {
+					if (_instance.isMissing(attribute)
+						&& i != _instance.classIndex ()) {
 						yield return GetAttributeType(attribute);
 					}
 				}
@@ -111,9 +118,10 @@ namespace DaisyML.Weka
 		public void SetTarget (string name, double targetValue)
 		{
 			var index = _instance.classIndex();
-			if (index < 0 || _instance.attribute(index).name() == name) {
+			var attributeName = _instance.attribute(index).name();
+			if (index < 0 || attributeName != name) {
 				throw new InvalidOperationException(
-					"No class with specified name exists.");
+					"No target with specified name exists.");
 			}
 			
 			_instance.setClassValue(targetValue);

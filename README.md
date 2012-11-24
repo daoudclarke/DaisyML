@@ -10,4 +10,3 @@ library. Currently it is a user-friendly wrapper around the Weka
 machine learning library in Java, compiled to .NET using IKVM.
 
 DaisyML is written in C# and released under the GPL license.
-
