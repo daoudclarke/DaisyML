@@ -42,9 +42,10 @@
     <Compile Include="IModel.cs" />
     <Compile Include="IInstance.cs" />
     <Compile Include="Target.cs" />
-    <Compile Include="FeatureValue.cs" />
     <Compile Include="Attribute.cs" />
     <Compile Include="IAttribute.cs" />
+    <Compile Include="InstanceComparer.cs" />
+    <Compile Include="InstanceExtensions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

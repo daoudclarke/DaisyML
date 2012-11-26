@@ -28,7 +28,9 @@ namespace DaisyML
 			get {
 				return GetValues<double> (typeof(Feature),
 					x => x == typeof(double) ||
-						 x == typeof(int),
+						 x == typeof(int) ||
+						 x == typeof(double?) ||
+						 x == typeof(int?),
 					x => Convert.ToDouble(x));
 			}
 		}
@@ -137,11 +139,14 @@ namespace DaisyML
 			var type = this.GetType();
 			var fields = type.GetFields()
 				.Where(x => selector(x.FieldType))
-				.OrderBy(x => x.Name);
+				.OrderBy(x => x.Name)
+				.ToArray();
 			foreach (var field in fields) {
 				var attributes = field.GetCustomAttributes(true);
-				if (attributes.Where(x => x.GetType() == featureOrTarget).Count() > 0) {
-					yield return new Attribute<T>(field.Name, converter(field.GetValue(this)));
+				var fieldValue = field.GetValue(this);
+				if (fieldValue != null
+					&& attributes.Where(x => x.GetType() == featureOrTarget).Count() > 0) {
+					yield return new Attribute<T>(field.Name, converter(fieldValue));
 				}
 			}
 		}

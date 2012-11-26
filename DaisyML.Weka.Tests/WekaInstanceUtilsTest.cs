@@ -44,7 +44,8 @@ namespace DaisyML.Weka.Tests
 				target = 2.0 };
 			Assert.AreEqual(1, instance.NumericTargets.Count());
 			Assert.AreEqual(0, instance.NominalTargets.Count());
-			Assert.AreEqual(3, instance.NumericFeatures.Count());
+			Assert.AreEqual(2, instance.NumericFeatures.Count());
+			Assert.AreEqual (1, instance.MissingFeatures.Count ());
 			Assert.AreEqual(1, instance.NominalFeatures.Count ());
 			
 			
@@ -55,10 +56,12 @@ namespace DaisyML.Weka.Tests
 
 @attribute feature numeric
 @attribute fruit {value__,apple,orange,banana}
+@attribute notNull numeric
+@attribute nullable numeric
 @attribute target numeric
 
 @data
-1,orange,2";
+1,orange,3,?,2";
 			var data = converted.ToString();
 			Console.WriteLine(data);
 			Assert.AreEqual(expected, data, "Conversion to Weka format incorrect."); 

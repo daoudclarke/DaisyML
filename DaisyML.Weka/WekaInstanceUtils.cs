@@ -135,7 +135,9 @@ namespace DaisyML.Weka
 			foreach (var attribute in attributes) {
 				weka.core.Attribute wekaAttribute;
 				if (attribute.Value == typeof(int) ||
-				    attribute.Value == typeof(double)) {
+				    attribute.Value == typeof(double) ||
+				    attribute.Value == typeof(int?) ||
+				    attribute.Value == typeof(double?)) {
 					wekaAttribute = new weka.core.Attribute(attribute.Name);
 				} else if (attribute.Value == typeof(string)) {
 					var orderedValues = stringValues[attribute.Name]
