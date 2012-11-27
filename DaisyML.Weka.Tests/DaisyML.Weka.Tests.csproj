@@ -79,6 +79,10 @@
       <Project>{934A6801-D8F5-4545-A290-C855B39FF362}</Project>
       <Name>DaisyML.TestData</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DaisyML.Utils\DaisyML.Utils.csproj">
+      <Project>{9046F113-BE12-4083-A178-E9EEF1D1ACD0}</Project>
+      <Name>DaisyML.Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

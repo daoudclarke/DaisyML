@@ -6,6 +6,7 @@ using NUnit.Framework;
 
 using DaisyML;
 using DaisyML.Weka;
+using DaisyML.Utils;
 
 namespace DaisyML.Weka.Tests
 {
@@ -78,20 +79,19 @@ namespace DaisyML.Weka.Tests
 			// Arrange
 			var data = TestData.Data.GetTestInstances();
 			foreach (var instances in data) {
+				Console.WriteLine(instances.First().TypeIdentifier);
 				Assert.Less(instances.First().NumericTargets.Count()
 					+ instances.First().NominalTargets.Count(), 2);
 				var wekaInstances = (WekaInstances)instances;
-				// var originalArff = wekaInstances.GetArff();
+				var originalJson = InstanceUtils.ToJson(wekaInstances);
 				
 				// Act
 				var converted = WekaInstanceUtils.ConvertToWeka(wekaInstances);
 				
 				// Assert
 				var convertedInstances = new WekaInstances(converted);
-				Assert.IsTrue(convertedInstances.SequenceEqual<IInstance>(
-					instances, new InstanceComparer()));
-//				Assert.AreEqual(originalArff, convertedArff,
-//				                "Conversion does not give the same ARFF.");
+				var convertedJson = InstanceUtils.ToJson(convertedInstances);
+				Assert.AreEqual(originalJson, convertedJson);
 			}
 		}
 	}

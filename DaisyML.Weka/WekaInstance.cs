@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 using DaisyML;
 
@@ -15,61 +16,33 @@ namespace DaisyML.Weka
 			_instance = instance;
 			_repository = repository;
 		}
-
+		
 		#region IInstance implementation
 		public IEnumerable<IAttribute<string>> StringFeatures {
 			get {
-				for (int i=0; i<_instance.numAttributes(); ++i) {
-					var attribute = _instance.attribute(i);
-					if (attribute.isString()
-						 && !_instance.isMissing(attribute)
-						 && i != _instance.classIndex()) {
-						yield return new Attribute<string>(
-							attribute.name(), _instance.stringValue(i));
-					}
-				}
+				return GetOrderedFeatures(x => x.isString(), false,
+					x => _instance.stringValue(x.index()));
 			}
 		}
 	
 		public IEnumerable<IAttribute<double>> NumericFeatures {
 			get {
-				for (int i=0; i<_instance.numAttributes(); ++i) {
-					var attribute = _instance.attribute (i);
-					if (attribute.isNumeric()
-						 && !_instance.isMissing (attribute)
-						 && i != _instance.classIndex ()) {
-						yield return new Attribute<double>(
-							attribute.name(), _instance.value(i));
-					}
-				}
+				return GetOrderedFeatures(x => x.isNumeric(), false,
+					x => _instance.value (x));
 			}
 		}
 	
 		public IEnumerable<IAttribute<Enum>> NominalFeatures {
 			get {
-				for (int i=0; i<_instance.numAttributes(); ++i) {
-					var attribute = _instance.attribute (i);
-					if (attribute.isNominal()
-						&& !_instance.isMissing (attribute)
-						&& i != _instance.classIndex ()) {
-						yield return new Attribute<Enum>(
-							attribute.name(),
-							_repository.GetEnumValue(attribute,
-								(int)_instance.value(attribute)));
-					}
-				}
+				return GetOrderedFeatures(x => x.isNominal(), false,
+					x => _repository.GetEnumValue(x, (int)_instance.value(x)));
 			}
 		}
 	
 		public IEnumerable<IAttribute<Type>> MissingFeatures {
 			get {
-				for (int i=0; i<_instance.numAttributes(); ++i) {
-					var attribute = _instance.attribute (i);
-					if (_instance.isMissing(attribute)
-						&& i != _instance.classIndex ()) {
-						yield return GetAttributeType(attribute);
-					}
-				}
+				return GetOrderedFeatures(x => true, true,
+					x => GetAttributeType(x).Value);
 			}
 		}
 	
@@ -187,7 +160,30 @@ namespace DaisyML.Weka
 //		
 //		#endregion
 
-	
+		private IEnumerable<IAttribute<T>> GetOrderedFeatures<T>(
+			Func<weka.core.Attribute, bool> test, bool missing,
+			Func<weka.core.Attribute, T> mapping)
+		{
+			return GetFeatures(test, missing, mapping).OrderBy(x => x.Name);
+		}
+
+
+		private IEnumerable<IAttribute<T>> GetFeatures<T>(
+			Func<weka.core.Attribute, bool> test, bool missing,
+			Func<weka.core.Attribute, T> mapping)
+		{
+			for (int i=0; i<_instance.numAttributes(); ++i) {
+				var attribute = _instance.attribute (i);
+				if (test(attribute)
+						&& missing == _instance.isMissing (attribute)
+						&& i != _instance.classIndex ()) {
+					yield return new Attribute<T>(
+							attribute.name(),
+							mapping(attribute));
+				}
+			}			
+		}
+		
 		private Attribute<Type> GetAttributeType(weka.core.Attribute attribute)
 		{
 			if (attribute.isString ()) {
