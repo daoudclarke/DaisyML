@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Newtonsoft.Json;
 
 using DaisyML.Weka;
 
@@ -61,6 +62,12 @@ namespace DaisyML.Utils
 				result[index] = swap;
 			}
 			return result;
+		}
+		
+		public static string ToJson(IEnumerable<IInstance> instances) {
+			var dictionaryInstances = instances.Select(
+				x => new DictionaryInstance(x)).ToArray();
+			return JsonConvert.SerializeObject(dictionaryInstances);
 		}
 	}
 }

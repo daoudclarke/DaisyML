@@ -46,6 +46,7 @@
     <Compile Include="IAttribute.cs" />
     <Compile Include="InstanceComparer.cs" />
     <Compile Include="InstanceExtensions.cs" />
+    <Compile Include="DictionaryInstance.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
