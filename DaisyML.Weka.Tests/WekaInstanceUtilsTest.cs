@@ -81,15 +81,17 @@ namespace DaisyML.Weka.Tests
 				Assert.Less(instances.First().NumericTargets.Count()
 					+ instances.First().NominalTargets.Count(), 2);
 				var wekaInstances = (WekaInstances)instances;
-				var originalArff = wekaInstances.GetArff();
-				var converted = WekaInstanceUtils.ConvertToWeka(wekaInstances);
+				// var originalArff = wekaInstances.GetArff();
 				
 				// Act
-				var convertedArff = converted.toString();
+				var converted = WekaInstanceUtils.ConvertToWeka(wekaInstances);
 				
 				// Assert
-				Assert.AreEqual(originalArff, convertedArff,
-				                "Conversion does not give the same ARFF.");
+				var convertedInstances = new WekaInstances(converted);
+				Assert.IsTrue(convertedInstances.SequenceEqual<IInstance>(
+					instances, new InstanceComparer()));
+//				Assert.AreEqual(originalArff, convertedArff,
+//				                "Conversion does not give the same ARFF.");
 			}
 		}
 	}
