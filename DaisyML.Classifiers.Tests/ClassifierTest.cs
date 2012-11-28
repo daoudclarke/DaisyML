@@ -16,25 +16,43 @@ namespace DaisyML.Classifiers.Tests
 	{
 		[Test]
 		public void TestClassifiers() {
-			// Arrange
-			var classifier = new NaiveBayesClassifier();
-			var data = Data.GetTestInstances().First().Shuffle();
-			var trainingSetSize = data.Count() / 2;
-			var trainingData = data.Take(trainingSetSize);
-			var testData = data.Skip(trainingSetSize).ToArray();
+			var classifiers = new IClassifier[] {
+				new NaiveBayesClassifier (),
+				new DecisionTree()
+			};
 
-			var targetName = testData.First().GetTargetNames().First();
-			foreach (var instance in testData) {
-				instance.SetTargetMissing(targetName);
-			}
-			
-			// Act
-			var model = classifier.Train(trainingData);
-			model.Classify(testData);
-			
-			// Assert - no instance should have a missing class value
-			foreach (var instance in testData) {
-				Assert.AreEqual(0, instance.MissingTargets.Count());
+			foreach (var classifier in classifiers) {						
+				// Arrange
+				int numDatasetsProcessed = 0;
+				var allInstances = Data.GetTestInstances();
+				foreach (var instances in allInstances) {
+					var data = instances.Shuffle();
+					var trainingSetSize = data.Count() / 2;
+					var trainingData = data.Take(trainingSetSize);
+					var testData = data.Skip(trainingSetSize).ToArray();
+		
+					var targetName = testData.First().GetTargetNames().First();
+					foreach (var instance in testData) {
+						instance.SetTargetMissing(targetName);
+					}
+					
+					// Act
+					try {
+						var model = classifier.Train(trainingData);
+						model.Classify(testData);
+					} catch (weka.core.UnsupportedAttributeTypeException) {
+						// These instances are not suitable for the classifier
+						continue;
+					}
+					
+					// Assert - no instance should have a missing class value
+					foreach (var instance in testData) {
+						Assert.AreEqual(0, instance.MissingTargets.Count());
+					}
+					++numDatasetsProcessed;
+				}
+				Assert.Greater(numDatasetsProcessed, 0,
+					"No matching datasets for classifier.");
 			}
 		}
 	}

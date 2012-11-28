@@ -49,6 +49,9 @@
       <Private>False</Private>
       <Package>nunit</Package>
     </Reference>
+    <Reference Include="weka">
+      <HintPath>..\lib\weka.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />

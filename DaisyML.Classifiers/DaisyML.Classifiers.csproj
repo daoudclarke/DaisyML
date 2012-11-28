@@ -47,9 +47,9 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="NaiveBayesClassifier.cs" />
-    <Compile Include="NaiveBayesModel.cs" />
     <Compile Include="WekaModel.cs" />
     <Compile Include="WekaTrain.cs" />
+    <Compile Include="DecisionTree.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
