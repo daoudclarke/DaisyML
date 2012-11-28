@@ -18,9 +18,11 @@ namespace DaisyML
 
 		IEnumerable<IAttribute<Type>> MissingTargets { get; }
 
-		void SetTarget (string name, double value);
+		void SetTarget (string name, double targetValue);
 
-		void SetTarget (string name, Enum value);
+		void SetTarget (string name, Enum targetValue);
+		
+		void SetTargetMissing (string name);
 		
 		string TypeIdentifier { get; }
 	}

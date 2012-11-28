@@ -56,6 +56,18 @@ namespace DaisyML
 		{
 			NominalTargetIndex[name] = targetValue;
 		}
+		
+		public void SetTargetMissing (string name)
+		{
+			if (NumericTargetIndex.ContainsKey(name)) {
+				NumericTargetIndex.Remove(name);
+				MissingTargetIndex[name] = typeof(double);
+			} else if (NominalTargetIndex.ContainsKey(name)) {
+				var type = NominalTargetIndex[name].GetType();
+				NominalTargetIndex.Remove(name);
+				MissingTargetIndex[name] = type;
+			}
+		}
 	
 		public IEnumerable<IAttribute<string>> StringFeatures {
 			get {

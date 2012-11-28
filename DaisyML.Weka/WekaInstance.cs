@@ -90,26 +90,22 @@ namespace DaisyML.Weka
 		
 		public void SetTarget (string name, double targetValue)
 		{
-			var index = _instance.classIndex();
-			var attributeName = _instance.attribute(index).name();
-			if (index < 0 || attributeName != name) {
-				throw new InvalidOperationException(
-					"No target with specified name exists.");
-			}
-			
+			CheckTarget (name);
 			_instance.setClassValue(targetValue);
 		}
 	
 		public void SetTarget (string name, Enum targetValue)
 		{
-			var index = _instance.classIndex ();
-			if (index < 0 || _instance.attribute(index).name () == name) {
-				throw new InvalidOperationException (
-					"No class with specified name exists.");
-			}
-
+			CheckTarget (name);
 			_instance.setClassValue(targetValue.ToString());
 		}
+		
+		public void SetTargetMissing (string name)
+		{
+			CheckTarget(name);
+			_instance.setClassMissing();
+		}
+		
 		#endregion		
 		
 //		#region IInstance implementation
@@ -159,7 +155,16 @@ namespace DaisyML.Weka
 //		}
 //		
 //		#endregion
-
+		
+		private void CheckTarget(string name)
+		{
+			var index = _instance.classIndex ();
+			if (index < 0 || _instance.attribute (index).name () != name) {
+				throw new InvalidOperationException (
+					"No class with specified name exists.");
+			}		
+		}
+		
 		private IEnumerable<IAttribute<T>> GetOrderedFeatures<T>(
 			Func<weka.core.Attribute, bool> test, bool missing,
 			Func<weka.core.Attribute, T> mapping)

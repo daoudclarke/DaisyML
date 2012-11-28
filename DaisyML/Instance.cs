@@ -81,6 +81,11 @@ namespace DaisyML
 		{
 			SetTargetInternal (name, targetValue);
 		}
+		
+		public void SetTargetMissing (string name)
+		{
+			SetTargetInternal (name, null);
+		}
 	
 		public string TypeIdentifier {
 			get {

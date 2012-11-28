@@ -6,6 +6,13 @@ namespace DaisyML
 {
 	public static class InstanceExtensions
 	{
+		public static IEnumerable<string> GetTargetNames(this IInstance instance)
+		{
+			return instance.NominalTargets.Select(x => x.Name)
+				.Concat(instance.NumericTargets.Select(x => x.Name))
+				.Concat(instance.MissingTargets.Select(x => x.Name));
+		}
+	
 		public static bool Equals(this IInstance input, object other)
 		{
 			var otherInstance = other as IInstance;
